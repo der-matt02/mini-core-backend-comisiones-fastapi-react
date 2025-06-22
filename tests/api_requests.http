@@ -1,0 +1,68 @@
+#############################################
+# 1. Crear un vendedor
+#############################################
+POST http://localhost:8000/api/v1/vendedores
+Content-Type: application/json
+
+{
+  "nombre": "Mathew",
+  "apellido": "Baquero"
+}
+
+###
+
+#############################################
+# 2. Crear ventas (dos el mismo día)
+#############################################
+POST http://localhost:8000/api/v1/ventas
+Content-Type: application/json
+
+{
+  "vendedor_id": 1,
+  "fecha": "2024-06-01",
+  "monto": 300.00
+}
+
+###
+POST http://localhost:8000/api/v1/ventas
+Content-Type: application/json
+
+{
+  "vendedor_id": 1,
+  "fecha": "2024-06-01",
+  "monto": 400.00
+}
+
+###
+
+#############################################
+# 3. Crear reglas de comisión
+#############################################
+POST http://localhost:8000/api/v1/reglas
+Content-Type: application/json
+
+{
+  "monto_min": 0,
+  "monto_max": 500,
+  "porcentaje": 5
+}
+
+###
+POST http://localhost:8000/api/v1/reglas
+Content-Type: application/json
+
+{
+  "monto_min": 501,
+  "monto_max": null,
+  "porcentaje": 15
+}
+
+###
+
+#############################################
+# 4. Obtener comisión en el rango 1-30 Jun 2024
+#############################################
+GET http://localhost:8000/api/v1/comisiones?vendedor_id=1&start=2024-06-01&end=2024-06-30
+Accept: application/json
+
+###
