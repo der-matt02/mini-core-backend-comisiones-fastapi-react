@@ -476,8 +476,7 @@ A continuación se muestra un flujo típico de uso de la API. Los ejemplos se as
 
 Para consultas, sugerencias o reportes de errores, puedes contactar al desarrollador:
 
-- **Nombre**: Matt
-- **Numero**: 098 719 6142
+- **Autor**: Mathew Baquero
 - **Correo electrónico**: dermatt02@gmail.com
 
 
