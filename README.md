@@ -1,5 +1,12 @@
 # Backend - Mini Core Comisiones
+---
+Link al video:  https://youtu.be/srxaciksG_g
 
+---
+
+repositorio frontend react: https://github.com/der-matt02/mini-core-frontend-comisiones-fastapi-react.git
+
+---
 ## Descripción
 
 Este proyecto corresponde al backend de una aplicación para el cálculo de comisiones de ventas basado en un conjunto de reglas, fechas y vendedores registrados. La aplicación está desarrollada con FastAPI y expone una API RESTful que permite registrar ventas, gestionar reglas de comisión, y obtener cálculos de comisión por rango de fechas para un vendedor específico.
